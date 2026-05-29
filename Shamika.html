@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Gopalani's and Biradari – Ticket (Shamika Gopalani)</title>
+<style>
+  body {
+    font-family: 'Trebuchet MS', sans-serif;
+    background: linear-gradient(135deg, #ff6f61, #1e90ff);
+    text-align: center;
+    color: #fff;
+    padding: 20px;
+  }
+  h1 {
+    font-size: 36px;
+    text-shadow: 3px 3px 6px #000;
+    margin-bottom: 0;
+  }
+  h2 {
+    font-size: 28px;
+    color: #ffd700;
+    margin: 5px 0;
+    text-shadow: 2px 2px 4px #000;
+  }
+  h3 {
+    font-size: 24px;
+    color: #fff;
+    margin-top: 5px;
+    text-shadow: 1px 1px 3px #000;
+  }
+  table {
+    margin: 30px auto;
+    border-collapse: collapse;
+    background: #ffffff;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 0 15px rgba(0,0,0,0.5);
+  }
+  td {
+    width: 65px; height: 65px;
+    text-align: center;
+    border: 2px solid #ff6f61;
+    font-size: 22px;
+    font-weight: bold;
+    color: #333;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  td:hover {
+    background: #ffe4e1;
+  }
+  td.marked {
+    background-color: #28a745;
+    color: #fff;
+    font-weight: bold;
+    transform: scale(1.15);
+    box-shadow: 0 0 10px #ffd700;
+  }
+  .footer-icons {
+    margin-top: 20px;
+    font-size: 30px;
+  }
+</style>
+</head>
+<body>
+  <h1>🎉 Gopalani's and Biradari 🎉</h1>
+  <h2>Housie Ticket</h2>
+  <h3> Shamika Gopalani</h3>
+
+  <table id="ticket">
+    <tr><td>7</td><td></td><td>21</td><td>36</td><td></td><td>58</td><td>69</td><td></td><td>84</td></tr>
+    <tr><td></td><td>16</td><td>29</td><td></td><td>42</td><td>55</td><td></td><td>73</td><td>87</td></tr>
+    <tr><td>5</td><td></td><td>33</td><td>48</td><td>62</td><td></td><td></td><td>78</td><td>90</td></tr>
+  </table>
+
+  <div class="footer-icons">🎲 🪙 🏆 🎉</div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      document.querySelectorAll('#ticket td').forEach(function(cell) {
+        cell.addEventListener('click', function() {
+          if (cell.textContent.trim() !== '') {
+            cell.classList.toggle('marked');
+          }
+        });
+      });
+    });
+  </script>
+</body>
+</html>
